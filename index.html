@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Guilherme Duarte Dias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4e9bff, #6c63ff);
+            color: white;
+            padding: 120px 0 80px 0;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        header p span {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        #sobre {
+            padding: 80px 0;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px 15px 0 0;
+            margin-top: -50px;
+        }
+
+        #sobre h2 {
+            font-size: 2.8rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        #sobre p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        #habilidades {
+            padding: 80px 0;
+            background-color: #f0f4f8;
+            text-align: center;
+            border-top: 5px solid #6c63ff;
+        }
+
+        #habilidades h2 {
+            font-size: 2.8rem;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        #habilidades ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #habilidades li {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #habilidades li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #6c63ff, #4e9bff);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #4e9bff, #6c63ff);
+        }
+
+        .perfil img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #4e9bff, #6c63ff);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8rem;
+            }
+
+            #sobre p, #habilidades li {
+                font-size: 1rem;
+            }
+
+            #habilidades ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        #contato {
+            padding: 80px 0;
+            background-color: #ffffff;
+            text-align: center;
+            border-top: 5px solid #6c63ff;
+        }
+
+        #contato h2 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        #contato p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #6c63ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #4e9bff;
+        }
+
+        .social-links img {
+            width: 20px;
+            height: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Guilherme Duarte Dias</h1>
+            <p>Curso Técnico em Informática para Internet</p>
+            <p><strong>SENAI Pará de Minas CFP Dr. Celso Charurí</strong></p>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="perfil">
+                <img src="https://github.com/guilhermeduartedias.png" alt="Guilherme Duarte Dias">
+            </div>
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante do curso Técnico em Informática para Internet com foco em desenvolvimento web, atualmente me especializando em HTML, CSS e JavaScript. Meu objetivo é criar interfaces incríveis e funcionais que proporcionem uma excelente experiência ao usuário. Estou sempre em busca de novos desafios e melhorias no meu processo de aprendizagem.</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Banco de Dados (MySQL)</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guilherme Duarte Dias. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
